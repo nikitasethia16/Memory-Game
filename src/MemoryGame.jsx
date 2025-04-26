@@ -40,7 +40,7 @@ function MemoryGame() {
   // Handle card choice
   const handleChoice = (card) => {
     if (!disabled && !card.matched && !isGameStarted) {
-      // if (choiceOne && card.id === choiceOne.id) return;
+      if (choiceOne && card.id === choiceOne.id) return;
       choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
     }
   };
